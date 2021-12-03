@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Shoting Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="player-board">
+        <div id="Player1">
+          Player1
+          <div>
+            <img id="player-1-img" src="./plane.png" alt="imagesPlane" />
+          </div>
+        </div>
+
+        <div id="Player2">
+          <div>
+            <img src="./plane.png" alt="imagesPlane" />
+          </div>
+          Player2
+        </div>
+
+        <button onclick="shoot()" id="mybtn">shoot</button>
+      </div>
+      <div class="player-score">
+        <span class="span-score">Round <span id="round" ></span> </span>
+
+        <span  class="span-score">Player 1 <span id = "player1-score"></span>  </span>
+
+        <span  class="span-score">Player 2 <span id="player2-score"></span> </span>
+        <span class="span-score">
+          Player 1 wins <span class="wins-score" id = player_1_wins></span></span
+        >
+        <span class="span-score" >
+          Player 2 wins <span class="wins-score" id="player_2_wins"></span>
+        </span>
+      </div>
+      <span id = final_won></span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
